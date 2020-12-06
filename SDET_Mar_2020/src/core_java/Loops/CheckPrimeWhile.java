@@ -1,7 +1,7 @@
 package core_java.Loops;
 import java.util.*;
 
-public class CheckPrimeLoopDemo {
+public class CheckPrimeWhile {
 
 	public static void main(String[] args)
    {
@@ -12,8 +12,8 @@ public class CheckPrimeLoopDemo {
 		scan.close();
 		
 		boolean flag = false;
-		int i=2;
-		while(i<=num/2) //No number is divisible by more than its half
+		int i=2;//initialization
+		while(i<=num/2) //No number is divisible by more than its half //test expresssion
 		{
 		  if(num%i ==0)
 		  {
@@ -23,7 +23,7 @@ public class CheckPrimeLoopDemo {
 		  {
 			flag= false;
 		  }
-		  i++;
+		  i++;//update the condition
 		}
 		
 		if(flag)

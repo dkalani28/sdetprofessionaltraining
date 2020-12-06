@@ -6,17 +6,18 @@ public class ContinueBreakDemo {
 	{
 	 for(int i=1;i<=50;i++)
 	 {
-		 if(i>=30)
+		 if(i>30)
 		 {
 			 break;
 		 }
-		 if(i%2==0)
+		 if(i%2==0)//condition for even numbers
 		 {
-			 continue;
+			 System.out.println(i);
 		 }
 		 else
 		 {
-			 System.out.println(i);}
+			continue;
+	     }
 	   }
 	  System.out.println("Getting executed");
 	 }

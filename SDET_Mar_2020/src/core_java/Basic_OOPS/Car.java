@@ -22,7 +22,7 @@ public class Car
 		// TODO Auto-generated method stub
         String model ="Ciaz";
         int x=20; //declaration n initialization
-        Car c = new Car();
+        Car c = new Car(); 
 	}
 	
 	protected void display()

@@ -8,8 +8,14 @@ public class SumArray {
 	public static void main(String[] args) {
 		
 		int[] arr = new int[5]; //declaration
+		
+		//int[] arr = {10,56,34,2,7}; //declaration n initialization together
+		
+		int sum =0;
+		
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Enter the elements of the array");
+		
 		for(int i=0;i<5;i++)
 		{
 			arr[i] = reader.nextInt();
@@ -17,20 +23,26 @@ public class SumArray {
 		
 		reader.close();
 		
-		int sum =0;
+		//5 elements - 0 to 4
+		  for(int i=0;i<arr.length;i++)
+		  {
+			  sum = sum + arr[i]; 
+			//  sum -= arr[i];
+			//  sum += arr[i];  //short-hand notation
+		  }
+		 
 		
-		/*
-		 * for(int i=0;i<5;i++) { sum = sum + arr[i]; // sum += arr[i]; }
-		 */
-		
-		//JVM finds out the loop counter from teh size of the array passed
-		
-		 for(int num : arr) //type var: collection/array var stores the type of data inside the array
+		//JVM finds out the loop counter from the size of the array passed
+		  
+		  
+		//enhanced for loop - for-each loop
+		  
+		  ///type var: collection/array var stores the type of data inside the array
+		 for(int num : arr)//num=arr[0]
 		 { 
 			 sum+=num; //sum = sum+num; }
 		 }
 		 
-		
         System.out.println("Sum is " +sum);
 	}
 

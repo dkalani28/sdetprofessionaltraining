@@ -1,5 +1,7 @@
 package core_java.Conditional_Statements;
 
+import java.util.Scanner;
+
 //if-elseif ladder : single if, single else but multiple elseif
 // where there are independent multiple conditions to test
 
@@ -7,9 +9,22 @@ public class FindDigitsInNumber
 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 12121215;
+		//int n = 7;
 		
-		if(n<100 && n>=10)
+		int n;
+		Scanner scan = new Scanner(System.in);
+		
+	    System.out.println("Enter the number:");
+	    
+	    n = scan.nextInt();
+	    
+	    scan.close();
+		
+		if(n>=0 && n<10)
+		{
+			System.out.println("1-digit");
+		}
+		else if(n<100 && n>=10)
 		{
 			System.out.println("2-digit");
 		}
@@ -27,7 +42,7 @@ public class FindDigitsInNumber
 		}
 		else
 		{
-			System.out.println("number is not in 1 & 99999");
+			System.out.println("number is not in 10 & 99999");
 		}
 	}
 

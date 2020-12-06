@@ -23,7 +23,10 @@ public class MathImplementor implements MathsInterface, PrimeInterface{
 	}
 	
 	
-	 public void checkPrime(int a) { System.out.println("PrimeCheck"); }
+	 public void checkPrime(int a) 
+	 { 
+		 System.out.println("PrimeCheck"); 
+	 }
 	 
 
 	public static void main(String[] args)
@@ -32,20 +35,21 @@ public class MathImplementor implements MathsInterface, PrimeInterface{
 		
 		MathImplementor m = new MathImplementor();
 		Scanner scan = new Scanner(System.in);
+		
 		System.out.println("Enter the first number:");
 		int a = scan.nextInt();
 		
 		System.out.println("Enter the second number:");
 		int b = scan.nextInt();
 		
+		//after all values are read, only then close the input stream
 		scan.close();
 		
 		m.add(a,b);
 		m.subtract(a,b);
 		m.multiply(a,b);
 		m.divide(a,b);
-		
-		//m.checkPrime(a);
+	//	m.checkPrime(5);
 	  
 	  }
 	 

@@ -1,6 +1,5 @@
 //program for a multi-dimensional array : storing 2 values for each customer : invoice number and the amount
 
-
 package core_java.Arrays;
 import java.util.*;
 
@@ -10,7 +9,8 @@ public class RetailMultiArray
 	{
 		// TODO Auto-generated method stub
 	//declaration of a multi-dimensional array
-	double customer[][] = new double[3][2]; //3 customers, 2 values for each - invoice number, amount
+	double customer[][] = new double[3][2]; //3 customers, 3 values for each - invoice number, amount
+	
 	Scanner scan = new Scanner(System.in);
 	
 	System.out.println("Enter the elements:");
@@ -20,19 +20,21 @@ public class RetailMultiArray
 		for(int j=0;j<2;j++) //2 times, for index j = 0,1
 		{
 			customer[i][j] = scan.nextDouble(); //array populated from input values through scanner
+			//customer[1][0] = 78.9
+			//customer[1][1] = 23.0
 		}
 	}
-	
 	scan.close();
 	
-	System.out.println("Array values is:" +customer);
+	//objects in Java are stored with hexadecimal values - codes - identifiers.
+	System.out.println("Array values is:" + customer);
 
 	for(int i=0;i<3;i++) //20 times from i=0 to i=19
 	{
-		System.out.println("The values for the" + i++ + "customer are:  ");
+		System.out.println("The values for the " + (i+1) + " customer are:  ");//i++
 		for(int j=0;j<2;j++) //2 times, for index j = 0,1
 		{
-			System.out.println(" " +customer[i][j]);
+			System.out.println(customer[i][j]);
 		}
 	}
 	}

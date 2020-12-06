@@ -27,8 +27,9 @@ public class NestedIfDemo {
         	else if (marksObt >60){
         		grade = 'C';}
         	else{
-        		grade = 'D';}
-        System.out.println("Passed");
+        		grade = 'D';
+        	}
+            System.out.println("Passed");
         }
         
         else
@@ -36,7 +37,7 @@ public class NestedIfDemo {
         	grade = 'F';
         	System.out.println("Try Harder");
         }
-        System.out.println("Grade is: " + grade);
+        System.out.println("Grade of the child is: " + grade);
 	}
 
 }

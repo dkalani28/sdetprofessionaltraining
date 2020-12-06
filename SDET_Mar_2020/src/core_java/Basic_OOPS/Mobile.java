@@ -46,11 +46,11 @@ public class Mobile extends Product  //Mobile is a Product
 	//METHOD OVERRIDING
 	 void showProductDetails()
 	    {
-	    	System.out.println("ProductID:" + pid);
-	    	System.out.println("Price:" + price);
-	    	System.out.println("Name:" + name);
-	    	System.out.println("Brand:" + brand);
-	    	System.out.println("OS:" + os);
-	    	System.out.println("Ram:" + ram);
+	    	System.out.println("ProductID: " + pid);
+	    	System.out.println("Price: " + price);
+	    	System.out.println("Name: " + name);
+	    	System.out.println("Brand: " + brand);
+	    	System.out.println("OS: " + os);
+	    	System.out.println("RAM: " + ram);
 	    }
 }

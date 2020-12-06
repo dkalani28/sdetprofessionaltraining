@@ -3,7 +3,6 @@ import java.util.*;
 
 public class CheckPrimeFor {
 
-	
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -13,16 +12,16 @@ public class CheckPrimeFor {
 		scan.close();
 		boolean flag = false;
 		
-		int i=2;
-		while(i<=num/2)
+		for(int i=2;i<=num/2;i++)
 		{
 			if(num%i == 0)
-			{
+			{ 
 				flag = true;
-				System.out.println("true" + flag);
+				System.out.println(flag);
 			}
-			i++;
 		}
+		
+		
 		if(flag)
 		  System.out.println(num + " is not a prime no");
 		else

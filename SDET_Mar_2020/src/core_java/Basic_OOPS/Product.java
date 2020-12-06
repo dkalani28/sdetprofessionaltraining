@@ -29,9 +29,9 @@ public class Product {
 	
 	void showProductDetails()
 	{
-		System.out.println("ProductId is" +pid);
-		System.out.println("Price is" +price);
-		System.out.println("Name is" +name);
+		System.out.println("ProductId is: " +pid);
+		System.out.println("Price is: " +price);
+		System.out.println("Name is: " +name);
 	}
 	
 	public int getPid() {

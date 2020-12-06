@@ -32,23 +32,23 @@ public class StudentmarksExample {
 	    	
 	    	if(final_score>=90)
 	    	{
-	    		System.out.println("The grade is Excellent");
+	    		System.out.println("The grade is Excellent.");
 	    	}
 	    	else if(final_score>=75)
 	    	{
-	    		System.out.println("The grade is Very Good");
+	    		System.out.println("The grade is Very Good.");
 	    	}
 	    	else if(final_score>=60)
 	    	{
-	    		System.out.println("The grade is Good");
+	    		System.out.println("The grade is Good.");
 	    	}
 	    	else if(final_score>=40)
 	    	{
-	    		System.out.println("The grade is Average");
+	    		System.out.println("The grade is Average.");
 	    	}
 	    	else
 	    	{
-	    		System.out.println("The grade is Poor");
+	    		System.out.println("The grade is Poor.");
 	    	}
 	    	count++;
 	    }while(count<=2);

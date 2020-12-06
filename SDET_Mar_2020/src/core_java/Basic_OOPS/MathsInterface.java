@@ -1,5 +1,5 @@
 package core_java.Basic_OOPS;
-
+//maths interface
 public interface MathsInterface
 {
 	public void add(int a, int b);

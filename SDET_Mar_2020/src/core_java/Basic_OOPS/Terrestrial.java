@@ -7,8 +7,14 @@ class Terrestrial extends Animals
     { 
         super(name);
     } 
-       
-    public void habitat()  
+    
+    public void basicDetails(String details) //concrete method
+    { 
+    	System.out.println("---terrestrial----"); 
+        System.out.println(name + " " + details); 
+    }
+    
+  /*  public void habitat()  
     { 
         System.out.println("live on land");  
     } 
@@ -16,5 +22,5 @@ class Terrestrial extends Animals
     public void respiration()  
     { 
         System.out.println("respire through lungs or trachea");  
-    }
+    }*/
 }

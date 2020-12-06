@@ -33,9 +33,9 @@ public class BMW implements VehicleInterface1
 		b.speed=30;
 		b.applyBrakes(2); //calling member function by passing a value
 		
-		System.out.println("Gear is" +b.gear);
+		System.out.println("Gear is: " +b.gear);
 		b.changeGear(3);
-		System.out.println("Gear is" +b.gear);
+		System.out.println("Gear is: " +b.gear);
 		
 		b.speedUp(1);
 		b.displayStats();

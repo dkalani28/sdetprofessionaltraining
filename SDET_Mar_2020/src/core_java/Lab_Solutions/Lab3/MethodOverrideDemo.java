@@ -17,8 +17,6 @@ package core_java.Lab_Solutions.Lab3;
 			public int getRateOfInterest(){return 9;}  
 		}  
 		
-		//Test class to create objects and call the methods  
-		
 		public class MethodOverrideDemo {
 			public static void main(String args[]){  
 				SBI s=  new SBI();  
